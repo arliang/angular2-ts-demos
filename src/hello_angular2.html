@@ -1,16 +1,23 @@
 <html>
   <head>
-    <title>Angular 2 QuickStart</title>
+    <title>Angular 2 Material Design Demo</title>
     <script src="../node_modules/systemjs/dist/system.src.js"></script>
     <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="../lib/angular2_material.dev.js"></script>
     <script>
       System.config({
         packages: {'app': {defaultExtension: 'js'}}
       });
       System.import('app/app');
     </script>
+    <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css">
   </head>
   <body>
-    <my-app>loading...</my-app>
+    <header>Angular 2 Material Design Demo</header>
+
+    <section>
+      <material-demo></material-demo>
+      <my-app>loading...</my-app>
+    </section>
   </body>
 </html>
